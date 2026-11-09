@@ -1,0 +1,1 @@
+// tmdb.js : TMDB now_playing 응답
