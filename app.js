@@ -125,7 +125,7 @@ const yearsSinceB = (dateStr) => {
     return new Date().getFullYear() - new Date(dateStr).getFullYear();
 }
 
-document.getElementById("out").textContent = `전체 10편, 평균 평점 ${averageB(movies).toFixed(1)}점\n최고 평점 ${bestB(movies).title} (${bestB(movies).rating}점, 개봉한 지 ${yearsSinceB(bestB(movies).date)}년)\n관객 1위 ${sortByB(movies, "audience", true)[0].title} (누적 ${formatNumberB(sortByB(movies, "audience", true)[0].audience)})`;
+document.getElementById("out").textContent = `전체 10편, 평균 평점 ${averageB(movies).toFixed(1)}점\n최고 평점 ${bestB(movies).title} (${bestB(movies).rating}점, 개봉한 지 ${yearsSinceB(bestB(movies).date)}년)\n관객 1위 ${sortByB(movies, "audiences", true)[0].title} (누적 ${formatNumberB(sortByB(movies, "audiences", true)[0].audiences)} 명)`;
 
 // ===== Part C =====
 
