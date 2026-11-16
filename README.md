@@ -19,11 +19,18 @@
 | 4 | sortBy(movies, "rating", true)[0].title  | 'Avengers: Infinity War' | 'Avengers: Infinity War' | 
 | 5 | filterByRating(movies, 8).length | '1' | '1' | 
 | 6 | search(movies, " the ").length  | '7' | '7' | 
-| 7 | yearsSince("2016-03-03") | '10' | '10' | 
+| 7 | yearsSince("2018-04-25") | '8' | '8' | 
 | 8 | 4번 실행 뒤 movies[0].title  | 'The Passion of the Christ' | 'The Passion of the Christ' | 
 
 ## 어려웠던 점 3가지와 해결 
+| 번호 | 어려웠던 점 | 해결 방법 |
+|---|---|---|---| 
+| 1 | averageBy(list, key) 함수를 구현하는 과정에서 제공된 설명을 이해하는 것. 특히 기존 average 함수의 몸통을 return averageBy(list, "rating"); 한 줄로 변경하라는 부분에서 두 함수가 어떻게 연결되는지, 기존 코드를 왜 한 줄로 바꿀 수 있는지 이해하기 어려웠음. | 기존 average 함수와 새로 작성한 averageBy 함수의 역할을 비교하면서 코드를 한 줄씩 살펴봄. 또한 averageBy(list, "rating")처럼 키 이름을 전달하면 해당 속성의 평균을 계산할 수 있다는 것을 확인함. 이를 통해 하나의 함수를 여러 상황에서 재사용할 수 있고, 중복되는 코드를 줄일 수 있었음. |
+| 2 | 설명을 따라 코드를 작성하다 보면 앞뒤 내용이 자연스럽게 연결되지 않아 이해하기 어려웠음. | 수정이 필요한 부분을 뒤에서 다시 고침. |
+| 3 | best(movies).title  | 'Avengers: Infinity War' |
+
 
 ## 참고한 자료 (교재 절, MDN 페이지 제목, 검색어) 
+교수님께서 제공하신 PDF 파일
 
 ## 생성형 AI 사용 내역 (없으면 "없음") - 질문 요지 : - 답변 요약 : - 채택 여부 : 

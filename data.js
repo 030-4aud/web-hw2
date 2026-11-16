@@ -53,7 +53,7 @@ const audiences = [
 
 // Part B : 영화 객체 10건(Part A와 같은 순서) 
 
-const moviesB = [
+const movies = [
     {
         title: "The Passion of the Christ", year: 2004, date: "2004-02-25",
         rating: 7.5, audiences: 0, poster: "https://image.tmdb.org/t/p/w342/hNnh0cwtv5iQ1ErTSZXMbo1Q2Rl.jpg", type: "mine", rank: null
